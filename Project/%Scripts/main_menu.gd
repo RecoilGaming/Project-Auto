@@ -1,13 +1,9 @@
-extends CanvasLayer
+extends Control
 
 ## FIELDS
 
 
 ## METHODS
-# Base
-func _ready():
-	$Menu/HFlex/Margins/VFlex/Play.grab_focus()
-
 # Signals
 func _on_play_pressed():
 	get_tree().change_scene_to_file(Constants.arena_scene)

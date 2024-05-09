@@ -1,9 +1,18 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://d2f8pqka0jujj"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://d2f8pqka0jujj"]
 
-[ext_resource type="StyleBox" uid="uid://b5skehnxq4gg1" path="res://Project/UI/Buttons/menu_button.tres" id="1_u164i"]
+[ext_resource type="StyleBox" uid="uid://db84jajenf2d" path="res://Project/UI/Buttons/Menu/disabled.tres" id="1_anbu2"]
 [ext_resource type="FontFile" uid="uid://dy10xjaecgdwh" path="res://Project/UI/Fonts/riffic_bold.ttf" id="2_bqdcl"]
+[ext_resource type="StyleBox" uid="uid://ckbqkuxosq2d0" path="res://Project/UI/Buttons/Menu/hover.tres" id="2_wdsyw"]
+[ext_resource type="StyleBox" uid="uid://b5skehnxq4gg1" path="res://Project/UI/Buttons/Menu/normal.tres" id="3_l8fki"]
+[ext_resource type="StyleBox" uid="uid://c7mxnlgav6dxm" path="res://Project/UI/Buttons/Menu/pressed.tres" id="4_621q7"]
 
 [resource]
 default_font = ExtResource("2_bqdcl")
 default_font_size = 80
-Button/styles/normal = ExtResource("1_u164i")
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 30
+Button/styles/disabled = ExtResource("1_anbu2")
+Button/styles/hover = ExtResource("2_wdsyw")
+Button/styles/normal = ExtResource("3_l8fki")
+Button/styles/pressed = ExtResource("4_621q7")
