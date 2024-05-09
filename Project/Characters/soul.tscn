@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci8522lk3kgbu"]
+
+[ext_resource type="Script" path="res://Project/%Scripts/soul.gd" id="1_ix88c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x3euo"]
+size = Vector3(1, 1, 2.08165e-12)
+
+[node name="Soul" type="Area3D"]
+script = ExtResource("1_ix88c")
+
+[node name="Sprite" type="Sprite3D" parent="."]
+pixel_size = 0.05
+billboard = 2
+alpha_cut = 2
+texture_filter = 0
+
+[node name="Collider" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_x3euo")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

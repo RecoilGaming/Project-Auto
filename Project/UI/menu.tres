@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://d2f8pqka0jujj"]
+
+[ext_resource type="StyleBox" uid="uid://b5skehnxq4gg1" path="res://Project/UI/Buttons/menu_button.tres" id="1_u164i"]
+[ext_resource type="FontFile" uid="uid://dy10xjaecgdwh" path="res://Project/UI/Fonts/riffic_bold.ttf" id="2_bqdcl"]
+
+[resource]
+default_font = ExtResource("2_bqdcl")
+default_font_size = 80
+Button/styles/normal = ExtResource("1_u164i")

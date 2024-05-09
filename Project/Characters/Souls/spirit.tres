@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3 uid="uid://o5orxlvwo5o6"]
+
+[ext_resource type="Script" path="res://Project/%Scripts/Types/Objects/soul_data.gd" id="1_tp2jw"]
+
+[resource]
+script = ExtResource("1_tp2jw")
+name = ""
+tier = 1
+melee = 1
+ranged = 1
+health = 1

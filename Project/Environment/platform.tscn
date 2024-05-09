@@ -1,0 +1,159 @@
+[gd_scene load_steps=15 format=3 uid="uid://b4ycqs6iqhp4s"]
+
+[ext_resource type="Script" path="res://Project/%Scripts/platform.gd" id="1_8ail4"]
+[ext_resource type="PackedScene" uid="uid://dkltr8ojnjoi3" path="res://Project/Environment/team.tscn" id="2_lhnxg"]
+[ext_resource type="Script" path="res://Project/%Scripts/Types/Objects/soul_data.gd" id="3_fwsx3"]
+[ext_resource type="Texture2D" uid="uid://1lhuy2q04tip" path="res://Project/Characters/Player/player-base.png" id="4_kwait"]
+
+[sub_resource type="Resource" id="Resource_4j6u0"]
+script = ExtResource("3_fwsx3")
+name = "1"
+sprite = ExtResource("4_kwait")
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_i4vgw"]
+script = ExtResource("3_fwsx3")
+name = "2"
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_6abd2"]
+script = ExtResource("3_fwsx3")
+name = "3"
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_bsjl0"]
+script = ExtResource("3_fwsx3")
+name = "4"
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_hjj5s"]
+script = ExtResource("3_fwsx3")
+name = "5"
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_34fkx"]
+script = ExtResource("3_fwsx3")
+name = ""
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_tpv6w"]
+script = ExtResource("3_fwsx3")
+name = ""
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_tacxk"]
+script = ExtResource("3_fwsx3")
+name = ""
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_4qqi7"]
+script = ExtResource("3_fwsx3")
+name = ""
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[sub_resource type="Resource" id="Resource_fermj"]
+script = ExtResource("3_fwsx3")
+name = ""
+buy_price = 3
+sell_value = 1
+tier = 1
+level = 1
+xp = 0
+max_level = 3
+xp_required = Array[int]([2, 3])
+melee = 1
+ranged = 0
+health = 1
+
+[node name="Platform" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+script = ExtResource("1_8ail4")
+
+[node name="Ally" parent="." instance=ExtResource("2_lhnxg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.08165e-12, 2.08165e-12)
+souls = Array[ExtResource("3_fwsx3")]([SubResource("Resource_4j6u0"), SubResource("Resource_i4vgw"), SubResource("Resource_6abd2"), SubResource("Resource_bsjl0"), SubResource("Resource_hjj5s")])
+
+[node name="Enemy" parent="." instance=ExtResource("2_lhnxg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2.08165e-12, 2.08165e-12)
+souls = Array[ExtResource("3_fwsx3")]([SubResource("Resource_34fkx"), SubResource("Resource_tpv6w"), SubResource("Resource_tacxk"), SubResource("Resource_4qqi7"), SubResource("Resource_fermj")])

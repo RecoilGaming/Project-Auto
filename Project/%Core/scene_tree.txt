@@ -1,0 +1,38 @@
+* - Scripted
+() - Temporary
+
+Main: *Control
+├ Background: (ColorRect) + Blur
+└ HFlex: HBoxContainer
+  └ Margin: MarginContainer
+	└ VFlex: VBoxContainer
+	  ├ Title: Label
+	  ├ Play: Button
+	  ├ Unlocks: Button
+	  ├ Options: Button
+	  └ Quit: Button
+
+
+## OLD
+Main: *Node3D
+├ Camera: Camera3D
+├ Light: DirectionalLight3D
+├ Skybox: WorldEnvironment
+├ Platform: _Platform
+├ Platform2: *Node3D
+└─ UI
+
+_Platform: *MeshInstance3D
+├ Slot1: _Slot
+├ Slot2: _Slot
+├ Slot3: _Slot
+└ Slot4: _Slot
+
+_Slot: *Area3D
+├ Sprite: Sprite3D
+├ Collider: CollisionShape3D
+└ Character: _Character
+
+_Character: *Area3D
+├ Sprite: Sprite3D
+└ Collider: CollisionShape3D

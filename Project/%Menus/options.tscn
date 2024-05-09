@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0b7poqjtvego"]
+
+[ext_resource type="Theme" uid="uid://d2f8pqka0jujj" path="res://Project/UI/menu.tres" id="1_wq76s"]
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_wq76s")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.498039, 0.498039, 0.498039, 1)
+
+[node name="HFlex" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margins" type="MarginContainer" parent="HFlex"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Scroll" type="ScrollContainer" parent="HFlex/Margins"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VFlex" type="VBoxContainer" parent="HFlex/Margins/Scroll"]
+custom_minimum_size = Vector2(400, 2.08165e-12)
+layout_mode = 2
+theme_override_constants/separation = -1
+
+[node name="Play" type="Button" parent="HFlex/Margins/Scroll/VFlex"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Quit")
+text = "Play"
+
+[node name="Unlocks" type="Button" parent="HFlex/Margins/Scroll/VFlex"]
+layout_mode = 2
+text = "Unlocks"
+
+[node name="Options" type="Button" parent="HFlex/Margins/Scroll/VFlex"]
+layout_mode = 2
+text = "Options"
+
+[node name="Quit" type="Button" parent="HFlex/Margins/Scroll/VFlex"]
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_bottom = NodePath("../Play")
+text = "Quit"
