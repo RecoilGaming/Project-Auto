@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b43bapluchixq"]
 
 [ext_resource type="Theme" uid="uid://d2f8pqka0jujj" path="res://Project/UI/menu.tres" id="1_vxbm1"]
-[ext_resource type="Script" path="res://Project/%Scripts/options_menu.gd" id="2_x3vrl"]
+[ext_resource type="Script" path="res://Project/%Scripts/unlocks_menu.gd" id="2_bhac2"]
 [ext_resource type="Texture2D" uid="uid://b3n8d32dgu6od" path="res://Project/UI/Backgrounds/split_menu.svg" id="3_gd2f8"]
 
 [node name="Unlocks" type="Control"]
@@ -13,7 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_vxbm1")
-script = ExtResource("2_x3vrl")
+script = ExtResource("2_bhac2")
 
 [node name="temp" type="ColorRect" parent="."]
 layout_mode = 1
