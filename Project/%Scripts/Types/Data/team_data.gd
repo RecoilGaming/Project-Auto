@@ -19,7 +19,7 @@ enum TeamType {
 
 @export_group("Contents")
 @export var idol: IdolData = null
-@export var souls: Array[SoulData] = [null, null, null, null, null]
-@export var charms: Array[CharmData] = [null, null, null, null, null]
+@export var team: Array[SoulData] = [null, null, null, null, null]
+@export var off: Array[SoulData] = [null, null, null]
 
 ## METHODS

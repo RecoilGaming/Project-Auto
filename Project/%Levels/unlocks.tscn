@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://b43bapluchixq"]
 
-[ext_resource type="Theme" uid="uid://d2f8pqka0jujj" path="res://Project/UI/menu.tres" id="1_vxbm1"]
-[ext_resource type="Script" path="res://Project/%Scripts/unlocks_menu.gd" id="2_bhac2"]
-[ext_resource type="Texture2D" uid="uid://b3n8d32dgu6od" path="res://Project/UI/Backgrounds/split_menu.svg" id="3_gd2f8"]
+[ext_resource type="Theme" uid="uid://d2f8pqka0jujj" path="res://Project/UI/menu.tres" id="1_vkj0w"]
+[ext_resource type="Script" path="res://Project/%Scripts/unlocks_menu.gd" id="2_s4y4y"]
+[ext_resource type="Texture2D" uid="uid://b3n8d32dgu6od" path="res://Project/UI/Backgrounds/split_menu.svg" id="3_3000w"]
 
 [node name="Unlocks" type="Control"]
 custom_minimum_size = Vector2(1920, 1080)
@@ -12,8 +12,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_vxbm1")
-script = ExtResource("2_bhac2")
+theme = ExtResource("1_vkj0w")
+script = ExtResource("2_s4y4y")
 
 [node name="temp" type="ColorRect" parent="."]
 layout_mode = 1
@@ -31,7 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_gd2f8")
+texture = ExtResource("3_3000w")
 
 [node name="Margins" type="MarginContainer" parent="."]
 layout_mode = 1

@@ -1,5 +1,5 @@
 extends Resource
-class_name BaseAbility
+class_name AbilityData
 
 ## FIELDS
 @export var event: Constants.Event

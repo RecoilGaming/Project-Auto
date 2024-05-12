@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://b4ycqs6iqhp4s"]
 
-[ext_resource type="Script" path="res://Project/%Scripts/platform.gd" id="1_8ail4"]
-[ext_resource type="PackedScene" uid="uid://dkltr8ojnjoi3" path="res://Project/Environment/team.tscn" id="2_lhnxg"]
+[ext_resource type="Script" path="res://%Develop/Recoil/platform.gd" id="1_8ail4"]
+[ext_resource type="PackedScene" uid="uid://dkltr8ojnjoi3" path="res://%Develop/Recoil/team.tscn" id="2_lhnxg"]
 [ext_resource type="Script" path="res://Project/%Scripts/Types/Objects/soul_data.gd" id="3_fwsx3"]
 [ext_resource type="Texture2D" uid="uid://1lhuy2q04tip" path="res://Project/Characters/Player/player-base.png" id="4_kwait"]
 

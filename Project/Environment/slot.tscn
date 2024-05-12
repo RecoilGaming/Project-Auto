@@ -1,24 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://b4r5gto7ekdf3"]
+[gd_scene load_steps=5 format=3 uid="uid://bjvcii02gslih"]
 
-[ext_resource type="Texture2D" uid="uid://dxorjvrpvxyur" path="res://Project/Environment/slot.png" id="1_l6xfx"]
-[ext_resource type="Script" path="res://Project/%Scripts/slot.gd" id="1_sqbn6"]
-[ext_resource type="PackedScene" uid="uid://ci8522lk3kgbu" path="res://Project/Characters/soul.tscn" id="2_vuaf1"]
+[ext_resource type="Texture2D" uid="uid://bqwv88bgwj8ru" path="res://Project/Environment/slot.svg" id="1_nx4jm"]
+[ext_resource type="Script" path="res://Project/%Scripts/slot.gd" id="1_y4x6x"]
+[ext_resource type="Texture2D" uid="uid://ysyrdui33o57" path="res://Project/Environment/shadow.svg" id="3_qnduf"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_8ltmt"]
-size = Vector3(1.5, 2.08165e-12, 1.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nkjhv"]
+size = Vector2(120, 200)
 
-[node name="Slot" type="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
-script = ExtResource("1_sqbn6")
+[node name="Slot" type="Area2D" groups=["slot"]]
+script = ExtResource("1_y4x6x")
 
-[node name="Sprite" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, -1.5246e-23, -1.5246e-23, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
-pixel_size = 0.05
-texture_filter = 0
-texture = ExtResource("1_l6xfx")
+[node name="Base" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.498039)
+texture = ExtResource("1_nx4jm")
 
-[node name="Collider" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_8ltmt")
+[node name="Shadow" type="Sprite2D" parent="Base"]
+modulate = Color(1, 1, 1, 0.2)
+position = Vector2(2.08165e-12, 10)
+texture = ExtResource("3_qnduf")
 
-[node name="Soul" parent="." instance=ExtResource("2_vuaf1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 0.49, 2.08165e-12)
+[node name="Sprite" type="Sprite2D" parent="."]
+offset = Vector2(2.08165e-12, -50)
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_nkjhv")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -35,13 +35,12 @@ enum Target {
 }
 
 ## FIELDS
-var main_menu_scene: String = "res://Project/%Levels/main_menu.tscn"
-var play_menu_scene: String = "res://Project/%Levels/play_menu.tscn"
-var unlocks_menu_scene: String = "res://Project/%Levels/unlocks_menu.tscn"
-var options_menu_scene: String = "res://Project/%Levels/options_menu.tscn"
+var main_menu_scene: String = "res://Project/%Levels/main.tscn"
+var play_menu_scene: String = "res://Project/%Levels/play.tscn"
+var unlocks_menu_scene: String = "res://Project/%Levels/unlocks.tscn"
+var options_menu_scene: String = "res://Project/%Levels/options.tscn"
 var shop_scene: String = "res://Project/%Levels/shop.tscn"
 var arena_scene: String = "res://Project/%Levels/arena.tscn"
-
 
 
 ## NOTES: WINWITH + COMBO -> UNLOCK 

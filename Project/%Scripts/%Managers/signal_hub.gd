@@ -1,5 +1,8 @@
 extends Node
 
+## SIGNALS
+signal select_soul(src: int)
+
 ## METHODS
 # Setup
 func _ready() -> void:

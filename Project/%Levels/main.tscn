@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://ds6deqbj6ayv1"]
 
-[ext_resource type="Script" path="res://Project/%Scripts/main_menu.gd" id="1_gxvrx"]
-[ext_resource type="Theme" uid="uid://d2f8pqka0jujj" path="res://Project/UI/menu.tres" id="1_rxsms"]
-[ext_resource type="Theme" uid="uid://vmk2jipvmjqr" path="res://Project/UI/title.tres" id="2_y3sea"]
+[ext_resource type="Theme" uid="uid://d2f8pqka0jujj" path="res://Project/UI/menu.tres" id="1_qj6so"]
+[ext_resource type="Script" path="res://Project/%Scripts/main_menu.gd" id="2_o0dea"]
+[ext_resource type="Theme" uid="uid://vmk2jipvmjqr" path="res://Project/UI/title.tres" id="3_dlyou"]
 
 [node name="Main" type="Control"]
 custom_minimum_size = Vector2(1920, 1080)
@@ -12,8 +12,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_rxsms")
-script = ExtResource("1_gxvrx")
+theme = ExtResource("1_qj6so")
+script = ExtResource("2_o0dea")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -42,7 +42,7 @@ theme_override_constants/separation = 20
 custom_minimum_size = Vector2(420, 2.08165e-12)
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("2_y3sea")
+theme = ExtResource("3_dlyou")
 text = "Game Title"
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -3,7 +3,7 @@ extends Control
 ## METHODS
 # Signals
 func _on_play_pressed():
-	get_tree().change_scene_to_file(Constants.play_menu_scene)
+	get_tree().change_scene_to_file(Constants.shop_scene)
 
 func _on_unlocks_pressed():
 	var scene: Node = load(Constants.unlocks_menu_scene).instantiate()

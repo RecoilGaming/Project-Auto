@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkltr8ojnjoi3"]
+
+[ext_resource type="Script" path="res://Project/%Scripts/team.gd" id="1_ccxkh"]
+[ext_resource type="PackedScene" uid="uid://b4r5gto7ekdf3" path="res://%Develop/Recoil/slot.tscn" id="1_mfhom"]
+
+[node name="Team" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.08165e-12, 2.08165e-12)
+script = ExtResource("1_ccxkh")
+
+[node name="Slot1" parent="." instance=ExtResource("1_mfhom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -0.49, 2.08165e-12)
+
+[node name="Slot2" parent="." instance=ExtResource("1_mfhom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, -0.49, -0.95)
+
+[node name="Slot3" parent="." instance=ExtResource("1_mfhom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, -0.49, 0.95)
+
+[node name="Slot4" parent="." instance=ExtResource("1_mfhom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7, -0.49, -0.95)
+
+[node name="Slot5" parent="." instance=ExtResource("1_mfhom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7, -0.49, 0.95)
